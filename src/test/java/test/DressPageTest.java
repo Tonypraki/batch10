@@ -1,4 +1,6 @@
 package test;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import webApplication.DressPageObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -18,17 +20,17 @@ public class DressPageTest {
 @Test
 public void verifyDressSize() {
 	
-	Assert.assertTrue(dresspage.getCatalog().isDisplayed());
+	AssertJUnit.assertTrue(dresspage.getCatalog().isDisplayed());
 
-	Assert.assertTrue(dresspage.getBoxText().isDisplayed());
+	AssertJUnit.assertTrue(dresspage.getBoxText().isDisplayed());
 
-	Assert.assertTrue(dresspage.getSmallSize().isDisplayed());
+	AssertJUnit.assertTrue(dresspage.getSmallSize().isDisplayed());
 	
-	Assert.assertTrue(dresspage.getFirstDress().isDisplayed());
+	AssertJUnit.assertTrue(dresspage.getFirstDress().isDisplayed());
 
-	Assert.assertTrue(dresspage.getDiscountDress().isDisplayed());
+	AssertJUnit.assertTrue(dresspage.getDiscountDress().isDisplayed());
 
-	Assert.assertTrue(dresspage.getSmallText().isDisplayed());
+	AssertJUnit.assertTrue(dresspage.getSmallText().isDisplayed());
 
 }
 

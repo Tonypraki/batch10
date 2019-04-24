@@ -1,5 +1,7 @@
 package test;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -17,10 +19,10 @@ public class HomePageTest {
 
 	@Test
 	public void verifytabs() {
-		Assert.assertTrue(homePage.getWomen().isDisplayed());
+		AssertJUnit.assertTrue(homePage.getWomen().isDisplayed());
 	
-		Assert.assertTrue(homePage.getDresses().isDisplayed());
+		AssertJUnit.assertTrue(homePage.getDresses().isDisplayed());
 
-		Assert.assertTrue(homePage.getTshirts().isDisplayed());
+		AssertJUnit.assertTrue(homePage.getTshirts().isDisplayed());
 	}
 }
